@@ -13,6 +13,11 @@ let sendLeft = [
         message: teamFormation,
         name: "teamFormation",
         time: 3000
+    },
+    {
+        message: deltaRequest,
+        name: "deltaRequest",
+        time: 4000
     }
 ]
 

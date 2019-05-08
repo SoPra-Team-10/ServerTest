@@ -100,3 +100,19 @@ let teamFormation = {
     }
 }
 
+let deltaRequest = {
+    deltaType: "move",
+    success: true,
+    xPosOld: 0,
+    yPosOld: 0,
+    xPosNew: 0,
+    yPosNew: 0,
+    activeEntity: "rightChaser1",
+    passiveEntity: null,
+    phaseType: "playerPhase",
+    leftPoints: 0,
+    rightPoints: 0,
+    round: 0,
+    banReason: null
+}
+

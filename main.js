@@ -9,27 +9,23 @@
             payload: payload
         }
 
-
         if (side == "left") {
             connectionLeft.send(JSON.stringify(json));
         } else {
             connectionRight.send(JSON.stringify(json));
         }
-        document.getElementById(side).innnerText += "Sent: " + JSON.stringify(json, null, 4) + " \n\n";
+        let text = "Sent: " + JSON.stringify(json, null, 4) + " \n\n";
+        document.getElementById(side).innerText += text;
     }
 
-
-    connectionLeft.onopen = function () {
-        for (var c = 0; c < sendLeft.length; c++) {
-            setTimeout(send.bind(this, sendLeft[c].message, sendLeft[c].name, "left"), sendLeft[c].time);
+    function manageConnection(toSend, side) {
+        for (var c = 0; c < toSend.length; c++) {
+            setTimeout(send.bind(this, toSend[c].message, toSend[c].name, side), toSend[c].time);
         }
-    };
+    }
 
-    connectionRight.onopen = function () {
-        for (var c = 0; c < sendRight.length; c++) {
-            setTimeout(send.bind(this, sendRight[c].message, sendRight[c].name, "right"), sendRight[c].time);
-        }
-    };
+    connectionLeft.onopen = manageConnection.bind(this, sendLeft, "left");
+    connectionRight.onopen = manageConnection.bind(this, sendRight, "right");
 
     connectionLeft.onerror = function (error) {
         console.error(error);
@@ -41,7 +37,6 @@
 
     connectionLeft.onmessage = function (e) {
         document.getElementById("left").innerText += "Received: " + e.data + "\n\n";
-        console.log(e);
     };
 
     connectionRight.onerror = function (error) {
@@ -54,6 +49,5 @@
 
     connectionRight.onmessage = function (e) {
         document.getElementById("right").innerText += "Received: " + e.data + "\n\n";
-        console.log(e);
     };
 })();
