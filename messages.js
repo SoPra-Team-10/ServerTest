@@ -65,7 +65,7 @@ let teamConfig = {
             "sex": "m"
         }
     }
-}
+};
 
 let teamFormation = {
     "players": {
@@ -98,7 +98,7 @@ let teamFormation = {
             "yPos": 4
         }
     }
-}
+};
 
 let deltaRequest = {
     deltaType: "move",
@@ -114,5 +114,5 @@ let deltaRequest = {
     rightPoints: 0,
     round: 0,
     banReason: null
-}
+};
 
