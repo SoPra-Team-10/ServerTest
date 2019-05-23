@@ -10,15 +10,15 @@ let sendLeft = [
         time: 2000,
     },
     {
-        message: teamFormation,
+        message: teamFormationLeft,
         name: "teamFormation",
         time: 3000
     },
-    {
+    /*{
         message: deltaRequest,
         name: "deltaRequest",
         time: 4000
-    }
+    }*/
 ]
 
 let sendRight = [
@@ -33,7 +33,7 @@ let sendRight = [
         time: 2500,
     },
     {
-        message: teamFormation,
+        message: teamFormationRight,
         name: "teamFormation",
         time: 3500
     }

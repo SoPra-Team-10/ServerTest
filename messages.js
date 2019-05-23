@@ -36,66 +36,99 @@ let teamConfig = {
         },
         "keeper": {
             "name": "stringname",
-            "broom": "tinderblast",
+            "broom": "cleansweep11",
             "sex": "m"
         },
         "chaser1": {
             "name": "abcd",
-            "broom": "tinderblast",
+            "broom": "comet260",
             "sex": "m"
         },
         "chaser2": {
             "name": "abcd",
-            "broom": "tinderblast",
-            "sex": "m"
+            "broom": "nimbus2001",
+            "sex": "f"
         },
         "chaser3": {
             "name": "abcd",
-            "broom": "tinderblast",
-            "sex": "m"
+            "broom": "firebolt",
+            "sex": "f"
         },
         "beater1": {
             "name": "abcd",
             "broom": "tinderblast",
-            "sex": "m"
+            "sex": "f"
         },
         "beater2": {
             "name": "abcd",
             "broom": "tinderblast",
-            "sex": "m"
+            "sex": "f"
         }
     }
 }
 
-let teamFormation = {
+let teamFormationLeft = {
     "players": {
         "seeker": {
-            "xPos": 4,
-            "yPos": 4
+            "xPos": 3,
+            "yPos": 0
         },
         "keeper": {
             "xPos": 4,
-            "yPos": 4
+            "yPos": 0
         },
         "chaser1": {
-            "xPos": 4,
-            "yPos": 4
+            "xPos": 5,
+            "yPos": 0
         },
         "chaser2": {
-            "xPos": 4,
-            "yPos": 4
+            "xPos": 6,
+            "yPos": 0
         },
         "chaser3": {
-            "xPos": 4,
-            "yPos": 4
+            "xPos": 7,
+            "yPos": 0
         },
         "beater1": {
-            "xPos": 4,
-            "yPos": 4
+            "xPos": 3,
+            "yPos": 1
         },
         "beater2": {
             "xPos": 4,
-            "yPos": 4
+            "yPos": 1
+        }
+    }
+}
+
+let teamFormationRight = {
+    "players": {
+        "seeker": {
+            "xPos": 13,
+            "yPos": 0
+        },
+        "keeper": {
+            "xPos": 12,
+            "yPos": 0
+        },
+        "chaser1": {
+            "xPos": 11,
+            "yPos": 0
+        },
+        "chaser2": {
+            "xPos": 10,
+            "yPos": 0
+        },
+        "chaser3": {
+            "xPos": 9,
+            "yPos": 0
+        },
+        "beater1": {
+            "xPos": 13,
+            "yPos": 1
+        },
+        "beater2": {
+            "xPos": 12,
+            "yPos": 1
         }
     }
 }
