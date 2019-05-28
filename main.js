@@ -2,9 +2,18 @@
     const connectionLeft = new WebSocket('ws://localhost:8081', ['http-only']);
     const connectionRight = new WebSocket('ws://localhost:8081', ['http-only']);
 
+    function getTimestamp() {
+        let now = new Date();
+        console.log(now);
+
+        return now.getFullYear() + "-" + (now.getMonth()+1) + "-" + now.getUTCDate() + " "
+            + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + "."
+            + now.getMilliseconds()
+    }
+
     function send(payload, type, side) {
         let json = {
-            timestamp: "yyyy-MM-dd HH:mm:ss.SSS)",
+            timestamp: getTimestamp(),
             payloadType: type,
             payload: payload
         };
