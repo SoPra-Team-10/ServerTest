@@ -1,0 +1,19 @@
+body {
+    font-family: monospace;
+}
+
+.pane-left {
+    float: left;
+    width: 50%;
+    background: lightgreen;
+}
+
+.pane-right {
+    float: right;
+    width: 50%;
+    background: lightblue;
+}
+
+.messages {
+    white-space: pre-wrap;
+}

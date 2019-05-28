@@ -1,15 +1,16 @@
 <html lang="en">
     <head>
         <title>Websocket Test</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <div style="float: left; width: 50%; background:lightgreen;">
+        <div class="pane-left">
             <h1>Left:</h1>
-            <div id="left" style="white-space: pre-wrap"></div>
+            <div id="left" class="messages"></div>
         </div>
-        <div style="float: right; width: 50%; background:lightblue;">
+        <div class="pane-right">
             <h1>Right:</h1>
-            <div id="right"style="white-space: pre-wrap;"></div>
+            <div id="right" class="messages"></div>
         </div>
     </body>
     <script src="messages.js"></script>
