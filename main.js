@@ -1,6 +1,8 @@
+const url = "ws://localhost:8080";
+
 (function() {
-    const connectionLeft = new WebSocket('ws://localhost:8081', ['http-only']);
-    const connectionRight = new WebSocket('ws://localhost:8081', ['http-only']);
+    const connectionLeft = new WebSocket(url, ['http-only']);
+    const connectionRight = new WebSocket(url, ['http-only']);
 
     function getTimestamp() {
         let now = new Date();
