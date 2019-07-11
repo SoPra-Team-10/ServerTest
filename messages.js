@@ -25,8 +25,9 @@ let teamConfig = {
     "fans": {
         "goblins": 1,
         "trolls": 2,
-        "elves": 3,
-        "nifflers": 1
+        "elves": 2,
+        "nifflers": 1,
+        "wombats": 1
     },
     "players": {
         "seeker": {
@@ -149,3 +150,10 @@ let deltaRequest = {
     banReason: null
 };
 
+let pauseRequest = {
+    message: "Test"
+}
+
+let continueRequest = {
+    message: "Test2"
+}

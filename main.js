@@ -1,12 +1,11 @@
-const url = "ws://localhost:8080";
+const url = "ws://localhost:8081";
 
 (function() {
-    const connectionLeft = new WebSocket(url, ['http-only']);
-    const connectionRight = new WebSocket(url, ['http-only']);
+    const connectionLeft = new WebSocket(url);
+    const connectionRight = new WebSocket(url);
 
     function getTimestamp() {
         let now = new Date();
-        console.log(now);
 
         return now.getFullYear() + "-" + (now.getMonth()+1) + "-" + now.getUTCDate() + " "
             + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + "."
