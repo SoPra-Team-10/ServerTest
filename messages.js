@@ -25,9 +25,9 @@ let teamConfig = {
     "fans": {
         "goblins": 1,
         "trolls": 2,
-        "elves": 2,
+        "elves": 3,
         "nifflers": 1,
-        "wombats": 1
+        "wombats": 0
     },
     "players": {
         "seeker": {
